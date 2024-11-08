@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore", category=FutureWarning, module="sklearn.cluste
 def load_data():
     data = pd.read_csv("World_development_mesurement (1).csv")
     return data
-def clean_data(data):
+def clean_data(data): 
     # Drop unnecessary columns
     data.drop(['Ease of Business', 'Business Tax Rate'], axis=1, inplace=True)
 
